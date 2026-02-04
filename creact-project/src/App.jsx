@@ -1,4 +1,6 @@
+import React from 'react'
 import "./App.css";
+import chef from "./assets/chef.png"
 
 const items = [
   "Macaroni and Cheese",
@@ -25,13 +27,25 @@ function Header({ name, year }) {
 
 function Main({ dishes }) {
   return (
-    <ul>
-      {dishes.map((dish) => (
-        <li key={dish.id} style={{ listStyle: "none" }}>
-          {dish.title}
-        </li>
-      ))}
-    </ul>
+    <>
+      <div>
+        <h2>Welcome to this restaurant!</h2>
+      </div>
+      <main>
+        <img
+          src={chef}
+          height={200}
+          alt="Photo of a drawing of a chef"
+        />
+        <ul>
+          {dishes.map((dish) => (
+            <li key={dish.id} style={{ listStyle: "none" }}>
+              {dish.title}
+            </li>
+          ))}
+        </ul>
+      </main>
+    </>
   );
 }
 
