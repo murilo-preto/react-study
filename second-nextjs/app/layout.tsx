@@ -35,7 +35,7 @@ function Header() {
             <Link href="/contact">Contact</Link>
           </div>
           <div className="flex items-center">
-            <Link href="/">Home</Link>
+            <Link href="/hotels">Hotels</Link>
           </div>
           <div className="flex items-center">
             <Link href="/">Home</Link>
