@@ -11,7 +11,13 @@ export default function HotelBlock({ id, name, capacity }) {
       <h1>
         {name}:{capacity}
       </h1>
-      <Image src={id} width={299} height={300} loader={imageLoader} />
+      <Image
+        src={id}
+        width={299}
+        height={300}
+        loader={imageLoader}
+        alt="Picture of a hotel"
+      />
     </div>
   );
 }

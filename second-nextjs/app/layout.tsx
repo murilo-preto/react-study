@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 function Header() {
   return (
-    <header className="bg-amber-950 py-4">
+    <header className="bg-blue-700 py-4">
       <div className="container mx-auto">
         <nav className="flex items-center justify-between">
           <div className="flex items-center">
