@@ -1,19 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-//import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-/*
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-*/
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +9,7 @@ export const metadata: Metadata = {
 
 function Header() {
   return (
-    <header className="bg-blue-700 py-4">
+    <header className="bg-blue-100 dark:bg-blue-800 text-black dark:text-white p-1 m-2 rounded-md">
       <div className="container mx-auto">
         <nav className="flex items-center justify-between">
           <div className="flex items-center">
@@ -38,10 +25,7 @@ function Header() {
             <Link href="/hotels">Hotels</Link>
           </div>
           <div className="flex items-center">
-            <Link href="/">Home</Link>
-          </div>
-          <div className="flex items-center">
-            <Link href="/">Home</Link>
+            <Link href="/tailwind">Tailwind</Link>
           </div>
         </nav>
       </div>
